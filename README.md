@@ -6,7 +6,7 @@ An simple Gallery Module for Orchard CMS.
 [Demo](http://orchard-demos.neuhold.pro/RimangoGallery)
 
 
-Version 0.1 (Alpha)
+Version 0.2 (Alpha)
 ------------------
 * Adds 2 new ContentTypes: Gallery and GalleryEntry
 * Allows to create multiple Galleries with multiple Gallery Entries
