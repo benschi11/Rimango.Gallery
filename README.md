@@ -3,7 +3,8 @@ Rimango.Gallery
 
 An simple Gallery Module for Orchard CMS.
 
-Demo coming soon...
+[Demo](http://orchard-demos.neuhold.pro/RimangoGallery)
+
 
 Version 0.1 (Alpha)
 ------------------
