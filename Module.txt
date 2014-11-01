@@ -1,10 +1,11 @@
 ﻿Name: Rimango.Gallery
 AntiForgery: enabled
-Author: The Orchard Team
-Website: http://orchardproject.net
-Version: 1.0
-OrchardVersion: 1.0
-Description: Description for the module
+Author: Rimango Development
+Website: http://neuhold.pro
+Version: 0.1
+OrchardVersion: 1.8
+Description: Adds a simple Gallery.
 Features:
     Rimango.Gallery:
-        Description: Description for feature Rimango.Gallery.
+        Description: Adds a simple Gallery.
+		Dependencies: Rimango.ImageField, Orchard.MediaLibrary, Orchard.Lists

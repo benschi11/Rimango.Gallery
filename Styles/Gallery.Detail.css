@@ -1,0 +1,30 @@
+﻿.gallery img {
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 6px #292929;
+  /* CSS3 */
+  margin: auto;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+.clearfix:after {
+  clear: both;
+}
+ul.gallery {
+  padding-left: 0;
+  margin: 0;
+}
+.gallery li {
+  margin: 0;
+  list-style: none;
+  display: inline!important;
+  padding: 2px 5px;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+  float: left;
+  width: 200px;
+}
+/*# sourceMappingURL=Gallery.Detail.css.map */
