@@ -135,10 +135,6 @@
       <Project>{9916839C-39FC-4CEB-A5AF-89CA7E87119F}</Project>
       <Name>Orchard.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Orchard.MediaPicker\Orchard.MediaPicker.csproj">
-      <Project>{43D0EC0B-1955-4566-8D31-7B9102DA1703}</Project>
-      <Name>Orchard.MediaPicker</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Migrations.cs" />
