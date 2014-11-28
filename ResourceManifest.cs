@@ -20,6 +20,7 @@ namespace Rimango.Gallery
             manifest.DefineScript("Rimango.Gallery.Detail").SetUrl("Gallery.Detail.js").SetDependencies("jQuery");
             manifest.DefineScript("Rimango.Gallery.Overview").SetUrl("Gallery.Overview.js").SetDependencies("jQuery");
             manifest.DefineScript("PrettyPhoto").SetUrl("PrettyPhoto/jquery.prettyPhoto.js").SetDependencies("jQuery");
+            manifest.DefineScript("Masonry").SetUrl("Masonry/masonry.pkgd.min.js").SetDependencies("jQuery");
         }
     }
 }

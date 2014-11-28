@@ -35,6 +35,7 @@
     //Script.Require("Rimango.Gallery.Detail");
     Script.Require("PrettyPhoto").AtFoot();
     Style.Require("PrettyPhoto");
+    Script.Require("Masonry");
 
 
 }
@@ -45,7 +46,7 @@
     <ul class="gallery clearfix">
         @foreach (var img in images)
         {
-            <li style="width: 200px;">
+            <li class="gallery-item" style="width: 200px;">
                     <a rel="prettyPhoto[inline]" href="@Display.ResizeMediaUrl(Path: img.MediaUrl, Width: 800, Height: 800)" title="@img.Caption"><img class="img-responsive" src="@Display.ResizeMediaUrl(Path: img.MediaUrl, Width:200)" alt="@img.AlternateText" title="@img.Title" /></a>
             </li>
         }
@@ -55,10 +56,20 @@
 @using (Script.Foot())
 {
     <script type="text/javascript" charset="utf-8">
+        
+        var container = document.querySelector('.gallery');
+        var msnry = new Masonry(container, {
+            // options
+            columnWidth: 200,
+            itemSelector: '.gallery-item'
+        });
+
         $(document).ready(function () {
             $("a[rel^='prettyPhoto']").prettyPhoto({
                 theme: 'light_rounded'
             });
+
+
         });
     </script>
 

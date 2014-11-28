@@ -109,6 +109,7 @@
     <Content Include="Content\images\prettyPhoto\light_square\loader.gif" />
     <Content Include="Content\images\prettyPhoto\light_square\sprite.png" />
     <Content Include="Scripts\Gallery.Overview.js" />
+    <Content Include="Scripts\Masonry\masonry.pkgd.min.js" />
     <Content Include="Scripts\PrettyPhoto\jquery.prettyPhoto.js" />
     <Content Include="Styles\Gallery.Detail.css">
       <DependentUpon>Gallery.Detail.less</DependentUpon>
