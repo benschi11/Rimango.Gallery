@@ -57,12 +57,14 @@
 {
     <script type="text/javascript" charset="utf-8">
         $(function () {
-            var container = document.querySelector('.gallery');
-            var msnry = new Masonry(container, {
-                // options
-                columnWidth: 200,
-                itemSelector: '.gallery-item'
+            var $container = $('.gallery');
+            $container.imagesLoaded(function () {
+                $container.masonry({
+                    itemSelector: '.gallery-item',
+                    gutter: 10 
+                });
             });
+          
 
             $("a[rel^='prettyPhoto']").prettyPhoto({
                 theme: 'light_rounded'
