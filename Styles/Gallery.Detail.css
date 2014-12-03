@@ -18,14 +18,17 @@ ul.gallery {
   height: auto;
 }
 .gallery li {
-  margin: 0;
-  list-style: none;
-  display: inline!important;
-  padding: 2px 5px;
-  vertical-align: middle;
-  text-align: center;
-  position: relative;
-  float: left;
   width: 200px;
+  float: left;
+  margin-bottom: 5px;
+  /*margin: 0;
+    list-style: none;
+    display: inline!important;
+    padding: 2px 5px;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    float: left;
+    width: 200px;*/
 }
 /*# sourceMappingURL=Gallery.Detail.css.map */
