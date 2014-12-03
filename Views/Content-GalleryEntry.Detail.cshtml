@@ -56,20 +56,21 @@
 @using (Script.Foot())
 {
     <script type="text/javascript" charset="utf-8">
-        
-        var container = document.querySelector('.gallery');
-        var msnry = new Masonry(container, {
-            // options
-            columnWidth: 200,
-            itemSelector: '.gallery-item'
-        });
-
-        $(document).ready(function () {
-            $("a[rel^='prettyPhoto']").prettyPhoto({
-                theme: 'light_rounded'
+        $(function() {
+            var container = document.querySelector('.gallery');
+            var msnry = new Masonry(container, {
+                // options
+                columnWidth: 200,
+                itemSelector: '.gallery-item'
             });
 
+            $(document).ready(function() {
+                $("a[rel^='prettyPhoto']").prettyPhoto({
+                    theme: 'light_rounded'
+                });
 
+
+            });
         });
     </script>
 
