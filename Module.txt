@@ -2,8 +2,8 @@
 AntiForgery: enabled
 Author: Rimango Development
 Website: http://neuhold.pro
-Version: 0.1
-OrchardVersion: 1.8
+Version: 1.8.1
+OrchardVersion: 1.8.1
 Description: Adds a simple Gallery.
 Features:
     Rimango.Gallery:
