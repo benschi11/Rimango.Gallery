@@ -1,5 +1,5 @@
 ﻿/* ############### Gallery Styles ############### */
-gallery-entry {
+.gallery-entry {
   display: inline-block;
   margin: 10px;
   border: 0 !important;
@@ -12,12 +12,12 @@ gallery-entry {
   width: 340px;
   border-radius: 10px;
 }
-.gallery-summary-entry h3 {
+.gallery-summary-entry .gallery-caption {
   position: absolute;
   bottom: 10px;
   background: #000;
   background-color: rgba(0, 0, 0, 0.6);
-  width: 320px;
+  width: 334px;
   padding: 0 0 0 10px;
   color: #fbfbfb;
   margin-left: 3px;
@@ -26,6 +26,7 @@ gallery-entry {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   line-height: 1.3em;
+  font-size: 1.7em;
 }
 .selected {
   opacity: 1 !important;
