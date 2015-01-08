@@ -40,7 +40,7 @@
 <div class="gallery-summary-entry">
     <a href="@Url.ItemDisplayUrl((IContent)Model.ContentItem.TitlePart)">
         <img class="unselected" src="@Display.ResizeMediaUrl(Path: url, Width: 340)" />
-        <div class="gallery-caption">@title</div>
+        <div class="gallery-caption-frame"><div class="gallery-caption">@title</div></div>
     </a>
 </div>
 @tag.EndElement
