@@ -16,6 +16,7 @@ ul.gallery {
   padding-left: 0;
   margin: 0;
   height: auto;
+  list-style: none;
 }
 .gallery li {
   width: 200px;
