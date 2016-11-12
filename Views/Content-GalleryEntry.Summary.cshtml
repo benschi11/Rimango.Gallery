@@ -13,7 +13,7 @@
     Model.Classes.Add(contentTypeClassName);
 
 
-    var tag = Tag(Model, "article");
+    var tag = Tag(Model, "div");
 
     string url = string.Empty;
 
@@ -37,11 +37,13 @@
 
 
 @tag.StartElement
-<div class="gallery-summary-entry">
-    <a href="@Url.ItemDisplayUrl((IContent)Model.ContentItem.TitlePart)">
-        <img class="unselected" src="@Display.ResizeMediaUrl(Path: url, Width: 340)" />
-        <div class="gallery-caption-frame"><div class="gallery-caption">@title</div></div>
-    </a>
+<div class="row">
+    <div class="gallery-summary-entry col-md-4 col-xs-12">
+        <a href="@Url.ItemDisplayUrl((IContent)Model.ContentItem.TitlePart)">
+            <img class="unselected" src="@Display.ResizeMediaUrl(Path: url, Width: 340)" />
+            <div class="gallery-caption-frame"><div class="gallery-caption">@title</div></div>
+        </a>
+    </div>
 </div>
 @tag.EndElement
 

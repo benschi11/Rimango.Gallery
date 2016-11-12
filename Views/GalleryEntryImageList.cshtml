@@ -1,0 +1,54 @@
+﻿@using System.Collections
+@using Orchard.ContentManagement;
+@using Orchard.Utility.Extensions;
+
+@{
+
+
+
+
+    var images = Model.Images;
+
+    var count = images.Count;
+
+    Style.Require("Rimango.Gallery.Detail");
+    //Script.Require("Rimango.Gallery.Detail");
+    //Script.Require("PrettyPhoto").AtFoot();
+    //Style.Require("PrettyPhoto");
+    Script.Require("Masonry");
+
+
+}
+
+@if (images != null && count > 0)
+{
+    <ul class="gallery clearfix">
+        @foreach (var img in images)
+        {
+            <li class="gallery-item" style="width: 200px;">
+                <a rel="gallery" class="swipebox" href="@Display.ResizeMediaUrl(Path: img.MediaUrl, Width: 1400, Height: 1400)" title="@img.Caption"><img class="img-responsive" src="@Display.ResizeMediaUrl(Path: img.MediaUrl, Width:200)" alt="@img.AlternateText" title="@img.Title" /></a>
+            </li>
+        }
+    </ul>
+}
+
+@using (Script.Foot())
+{
+    <script type="text/javascript" charset="utf-8">
+        $(function () {
+            var $container = $('.gallery');
+            $container.imagesLoaded(function () {
+                $container.masonry({
+                    itemSelector: '.gallery-item',
+                    gutter: 10 
+                });
+            });
+
+
+            //$("a[rel^='prettyPhoto']").swipebox();
+
+
+        });
+    </script>
+
+}
