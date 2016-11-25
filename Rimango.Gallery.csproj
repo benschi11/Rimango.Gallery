@@ -203,12 +203,9 @@
       <DependentUpon>Gallery.Detail.css</DependentUpon>
     </Content>
     <Content Include="Scripts\Gallery.Detail.js" />
-    <Content Include="Scripts\Gallery.FrontPage.js" />
-    <Content Include="Assets\Less\Gallery.FrontPage.less" />
-    <Content Include="Asset.json" />
+    <Content Include="Assets.json" />
     <None Include="Assets\Less\Gallery.Detail.less" />
     <Content Include="Views\GalleryEntryImageList.cshtml" />
-    <Content Include="Views\Content-GalleryEntry.FrontPage.cshtml" />
     <Content Include="packages.config" />
   </ItemGroup>
   <PropertyGroup>
