@@ -1,0 +1,10 @@
+﻿[
+  {
+    "inputs": ["Assets/Less/Gallery.Detail.less"],
+    "output": "Styles/Gallery.Detail.css"
+  },
+  {
+    "inputs": ["Assets/Less/Gallery.Overview.less"],
+    "output": "Styles/Gallery.Overview.css"
+  }
+]
