@@ -13,10 +13,10 @@ namespace Rimango.Gallery
         {
             var manifest = builder.Add();
 
-            manifest.DefineStyle("Rimango.Gallery.Overview").SetUrl("Gallery.Overview.css");
+            manifest.DefineStyle("Rimango.Gallery.Overview").SetUrl("Gallery.Overview.min.css", "Gallery.Overview.css");
             manifest.DefineStyle("PrettyPhoto").SetUrl("prettyPhoto.css");
-            manifest.DefineStyle("Rimango.Gallery.Detail").SetUrl("Gallery.Detail.css");
-            manifest.DefineStyle("Rimango.Gallery.FrontPage").SetUrl("Gallery.FrontPage.css");
+            manifest.DefineStyle("Rimango.Gallery.Detail").SetUrl("Gallery.Detail.min.css", "Gallery.Detail.css");
+            manifest.DefineStyle("Rimango.Gallery.FrontPage").SetUrl("Gallery.FrontPage.css", "Gallery.FrontPage.min.css");
 
             manifest.DefineScript("Rimango.Gallery.Detail").SetUrl("Gallery.Detail.js").SetDependencies("jQuery");
             manifest.DefineScript("Rimango.Gallery.Overview").SetUrl("Gallery.Overview.js").SetDependencies("jQuery");
